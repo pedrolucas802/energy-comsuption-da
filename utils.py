@@ -1,16 +1,3 @@
-# Copyright (c) Streamlit Inc. (2018-2022) Snowflake Inc. (2022)
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
 
 import inspect
 import textwrap
@@ -26,3 +13,34 @@ def show_code(demo):
         st.markdown("## Code")
         sourcelines, _ = inspect.getsourcelines(demo)
         st.code(textwrap.dedent("".join(sourcelines[1:])))
+
+
+# def load_data_alt(selected_states, consumption_type):
+#     growth_array = []
+#     for selected_state in selected_states:
+#         years_sum_array = []
+#         current_year = 2004
+#         for j in range(18):
+#             current_year_sum = 0
+#             for i in range(13):
+#                 month_filter = df[
+#                     (df['sigla_uf'] == selected_state) & (df['mes'] == i) & (df['ano'] == current_year) & (
+#                                 df['tipo_consumo'] == consumption_type)]
+#                 current_year_sum += month_filter['consumo'].sum()
+#             years_sum_array.append({"sigla_uf": selected_state, "ano": current_year, "tipo_consumo": current_year_sum,
+#                                     "consumo": current_year_sum})
+#             current_year += 1
+#
+#         current_year = 2004
+#         for year in range(18):
+#             if current_year != 2004:
+#                 growth = years_sum_array[year].get("consumo") - years_sum_array[year - 1].get("consumo")
+#                 growth_array.append({"sigla_uf": selected_state, "ano": current_year, "tipo_consumo": consumption_type,
+#                                      "crescimento": growth})
+#             current_year += 1
+#
+#     data = pd.DataFrame(growth_array)
+#     fig = px.bar(data, x="ano", y="crescimento", color='sigla_uf')
+#     st.plotly_chart(fig)
+#     st.write(data)
+

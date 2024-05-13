@@ -17,6 +17,34 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/data/combined_filtered_pib_municipio_data.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/highest_pib_by_year.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/highest_pibc_by_year.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/merged_data.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/data/uf.csv">
           <value>
             <Attribute>
@@ -24,14 +52,42 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="/scripts/filtered_data.csv">
+        <entry key="/data/uf_energy_consumtions_by_year.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/scripts/filtered_pib_data.csv">
+        <entry key="/data/uf_highest_consumption_per_year.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/uf_pib_ano.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/uf_total_consumtions_by_year.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/scripts/uf_total_consumptions_by_year.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/scripts/uf_total_consumtions_by_year.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

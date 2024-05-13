@@ -43,6 +43,7 @@ def load_data(selected_states, consumption_type):
     st.markdown("Media de crescimento")
     mean_data = pd.DataFrame(growth_mean).sort_values(by='crescimento_avg', ascending=False)
     st.dataframe(mean_data)
+
     st.markdown("Dados escolhidos")
     st.write(data)
 

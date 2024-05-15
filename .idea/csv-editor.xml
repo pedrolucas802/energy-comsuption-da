@@ -38,13 +38,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="/data/merged_data.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="/data/uf.csv">
           <value>
             <Attribute>
@@ -59,6 +52,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/data/uf_energy_year.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/data/uf_highest_consumption_per_year.csv">
           <value>
             <Attribute>
@@ -66,28 +66,21 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="/data/uf_pib_ano.csv">
+        <entry key="/data/uf_pib_energy_year.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/data/uf_total_consumtions_by_year.csv">
+        <entry key="/data/uf_pib_energy_year_classified.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="/scripts/uf_total_consumptions_by_year.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="/scripts/uf_total_consumtions_by_year.csv">
+        <entry key="/data/uf_pib_year.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

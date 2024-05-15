@@ -18,11 +18,11 @@ def load_graphs(data):
     with col1:
         st.subheader("Produto Interno Bruto, a preços correntes(R$ 1.000)")
 
-        bar_fig = px.bar(data, x="ano", y="soma_produto_interno_bruto", color="uf")
-        st.plotly_chart(bar_fig)
-
         line_fig = px.line(data, x="ano", y="soma_produto_interno_bruto", color="uf")
         st.plotly_chart(line_fig)
+
+        bar_fig = px.bar(data, x="ano", y="soma_produto_interno_bruto", color="uf")
+        st.plotly_chart(bar_fig)
 
         lowess_fig = px.scatter(data, x="ano", y="soma_produto_interno_bruto", trendline="lowess")
         st.plotly_chart(lowess_fig)
@@ -30,15 +30,14 @@ def load_graphs(data):
     with col2:
         st.subheader("Produto Interno Bruto per capita, a preços correntes(R$ 1,00)")
 
-        bar_fig = px.bar(data, x="ano", y="soma_produto_interno_bruto_per_capita", color="uf")
-        st.plotly_chart(bar_fig)
-
         line_fig = px.line(data, x="ano", y="soma_produto_interno_bruto_per_capita", color="uf")
         st.plotly_chart(line_fig)
 
+        bar_fig = px.bar(data, x="ano", y="soma_produto_interno_bruto_per_capita", color="uf")
+        st.plotly_chart(bar_fig)
+
         lowess_fig = px.scatter(data, x="ano", y="soma_produto_interno_bruto_per_capita", trendline="lowess")
         st.plotly_chart(lowess_fig)
-
 
 
     st.markdown("Dados escolhidos")
@@ -49,10 +48,11 @@ def load_data(df,selected_states):
     load_graphs(data)
 
 def load_screen():
-    df = pd.read_csv('./data/uf_pib_ano.csv')
+    df = pd.read_csv('./data/uf_pib_energy_year.csv')
 
     selected_states = st.multiselect('UF', options=list(df['uf'].unique()), default=["CE"])
 
     load_data(df, selected_states)
+
 
 load_screen()
